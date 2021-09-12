@@ -1,7 +1,7 @@
-import { FoodOrderingApplication } from '../..';
+import { FoodOrderingApiApplication } from '../..';
 import { Client } from '@loopback/testlab';
 export declare function setupApplication(): Promise<AppWithClient>;
 export interface AppWithClient {
-    app: FoodOrderingApplication;
+    app: FoodOrderingApiApplication;
     client: Client;
 }

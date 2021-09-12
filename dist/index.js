@@ -6,7 +6,7 @@ const tslib_1 = require("tslib");
 const application_1 = require("./application");
 tslib_1.__exportStar(require("./application"), exports);
 async function main(options = {}) {
-    const app = new application_1.FoodOrderingApplication(options);
+    const app = new application_1.FoodOrderingApiApplication(options);
     await app.boot();
     await app.start();
     const url = app.restServer.url;
