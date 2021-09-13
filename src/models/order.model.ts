@@ -5,33 +5,26 @@ export class Order extends Entity {
   @property({
     type: 'number',
     id: true,
-    generated: true,
   })
   _id?: number;
-
-  @property({
-    type: 'date',
-    required: true,
-  })
-  time: string;
-
-  @property({
-    type: 'date',
-    required: true,
-  })
-  date: string;
-
-  @property({
-    type: 'object',
-    required: true,
-  })
-  food: object;
 
   @property({
     type: 'string',
     required: true,
   })
-  name: string;
+  date: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  food: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  customerName: string;
 
   @property({
     type: 'number',
